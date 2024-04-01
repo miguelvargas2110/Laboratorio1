@@ -2,6 +2,7 @@ plugins {
     id 'org.springframework.boot' version '3.0.1'
     id 'io.spring.dependency-management' version '1.1.0'
     id 'java'
+    id 'war'
 }
 group 'co.edu.uniquindio.software3'
 version '1.0-SNAPSHOT'
@@ -24,8 +25,20 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     runtimeOnly 'mysql:mysql-connector-java'
     implementation 'mysql:mysql-connector-java:8.0.26'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+
 
 }
 test {
     useJUnitPlatform()
 }
+
+bootWar {
+    archiveFileName = 'laboratorio1.war'
+}
+
+bootJar {
+    archiveFileName = 'laboratorio1.jar'
+}
+
