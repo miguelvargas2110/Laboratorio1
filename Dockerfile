@@ -1,4 +1,4 @@
-FROM adoptium/openjdk:18-jre-alpine AS builder
+FROM openjdk:18-jdk
 
 WORKDIR /app
 
