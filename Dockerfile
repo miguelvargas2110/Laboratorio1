@@ -7,3 +7,6 @@ COPY build/libs/laboratorio1.jar app.jar
 
 # Entrypoint to run the application
 ENTRYPOINT ["java", "-jar", "/app.jar"]
+
+# Expose port 8080
+EXPOSE 5000
