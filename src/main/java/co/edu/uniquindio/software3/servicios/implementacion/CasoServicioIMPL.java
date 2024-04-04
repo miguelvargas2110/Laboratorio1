@@ -11,7 +11,6 @@ import java.util.Optional;
 @Service
 public class CasoServicioIMPL implements CasoServicio {
 
-    @Autowired
     private final CasoRepo casoRepo;
 
     public CasoServicioIMPL(CasoRepo casoRepo) {
