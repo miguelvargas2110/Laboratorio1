@@ -3,9 +3,6 @@ steps:
     entrypoint: 'gradle'
     args: ['clean', 'build']  # Skip tests argument removed for brevity
 
-  # Copy the JAR file to the build context
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['cp', 'build/libs/*.jar', '$BUILD_DIR']
 
   # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
