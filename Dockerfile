@@ -1,8 +1,8 @@
-FROM adoptium/openjdk:18-jre-alpine
+FROM adoptopenjdk:18-jre-hotspot AS builder
 
 WORKDIR /app
 
-COPY build.gradle gradle.properties .
+COPY build.gradle gradle.properties
 RUN apk add --no-cache gradle
 
 COPY . .
