@@ -1,4 +1,4 @@
-FROM adoptopenjdk:18-jre-hotspot AS builder
+FROM openjdk:18-jdk
 
 WORKDIR /app
 
