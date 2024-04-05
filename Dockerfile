@@ -1,4 +1,4 @@
-FROM openjdk:21-jdk-alpine
+FROM openjdk:18-jdk
 
 # Create app directory
 WORKDIR /app
