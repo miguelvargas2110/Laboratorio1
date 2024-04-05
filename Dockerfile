@@ -9,4 +9,4 @@ COPY build/libs/laboratorio1.jar app.jar
 ENTRYPOINT ["java", "-jar", "/app.jar"]
 
 # Exponer el puerto especificado por la variable de entorno PORT
-EXPOSE $PORT
+EXPOSE 8080
